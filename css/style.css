@@ -1,0 +1,86 @@
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+* {
+    /* color palette */
+    --bg-color: #fafafa;
+    --text-color: #4d4f62;
+    --super-top-color: #44d3d2;
+    --team-top-color: #ea5454;
+    --karma-top-color: #fcae4a;
+    --calcu-top-color: #549ef2;
+    --drop-shadow-color: #83a6d2;
+
+    /* font size and weights */
+    --font-family: 'Poppins', sans-serif;
+    --extra-light: 200;
+    --regular: 400;
+    --semi-bold: 600;
+
+    --title: 36px;
+    --title-mobile: 24px;
+    --body: 15px;
+    --card-title: 20px;
+    --card-body: 13px;
+
+    /* line heights / letter spacing */
+    --body-lh: 25px;
+    --card-lh: 23px;
+    --body-title: .25px;
+    --body-ls: .1px;
+    --card-ls: .09px;
+    --mobile-title: .17px;
+}
+
+.title {
+    font-family: var(--font-family);
+    font-size: var(--title);
+    width: 100%;
+}
+
+.not-bold {
+    font-weight: var(--extra-light);
+}
+
+
+
+.card-container {
+    width: 311px;
+    height: 222px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 25px auto;
+    border: 1px outset #979797;
+    padding: 0 28px;
+    
+}
+
+.img-card {
+    width: 57px;
+    align-self: flex-end;
+}
+
+.card-discrip {
+    width: 254px;
+    letter-spacing: var(--card-ls);
+    line-height: var(--card-lh);
+}
+
+.super {
+    border-top: 5px solid var(--super-top-color);
+}
+
+.team {
+    border-top: 5px solid var(--team-top-color);
+}
+
+.karma {
+    border-top: 5px solid var(--karma-top-color);
+}
+
+.calc {
+    border-top: 5px solid var(--calcu-top-color);
+}
+
