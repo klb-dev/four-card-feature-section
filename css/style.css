@@ -1,7 +1,4 @@
 
-.attribution { font-size: 11px; text-align: center; }
-.attribution a { color: hsl(228, 45%, 44%); }
-
 * {
     /* color palette */
     --bg-color: #fafafa;
@@ -10,7 +7,7 @@
     --team-top-color: #ea5454;
     --karma-top-color: #fcae4a;
     --calcu-top-color: #549ef2;
-    --drop-shadow-color: #83a6d2;
+    --drop-shadow-color: rgba(131, 166, 210, .5);
 
     /* font size and weights */
     --font-family: 'Poppins', sans-serif;
@@ -34,27 +31,41 @@
 }
 
 .title {
+    color: var(--text-color);
     font-family: var(--font-family);
-    font-size: var(--title);
+    font-size: var(--title-mobile);
+    font-weight: var(--semi-bold);
     width: 100%;
+    text-align: center;
 }
 
 .not-bold {
     font-weight: var(--extra-light);
+    margin-top: 85px;
 }
 
-
+.company-def {
+    width: 311px;
+    text-align: center;
+    margin: 16px auto;
+    opacity: .5;
+    letter-spacing: var(--body-ls);
+    line-height: var(--body-lh);
+    margin-bottom: 76px;
+}
 
 .card-container {
     width: 311px;
-    height: 222px;
+    height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 25px auto;
-    border: 1px outset #979797;
     padding: 0 28px;
-    
+    box-shadow: 0 15px 30px var(--drop-shadow-color);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-size: 0;
 }
 
 .img-card {
@@ -62,10 +73,17 @@
     align-self: flex-end;
 }
 
+.card-title {
+    font-size: var(--card-title);
+    margin-top: -20px;
+}
+
 .card-discrip {
-    width: 254px;
+    font-size: var(--card-body);
+    width: 200px;
     letter-spacing: var(--card-ls);
     line-height: var(--card-lh);
+    opacity: .5;
 }
 
 .super {
@@ -84,3 +102,39 @@
     border-top: 5px solid var(--calcu-top-color);
 }
 
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+.frontendLogo {
+    width: 50px;
+    margin: 15px auto;
+}
+
+@media screen and (min-width: 992px) {
+    .title {
+        color: var(--text-color);
+        font-family: var(--font-family);
+        font-size: var(--title);
+        font-weight: var(--semi-bold);
+        width: 100%;
+        text-align: center;
+    }
+    
+    .not-bold {
+        font-weight: var(--extra-light);
+        margin-top: 80px;
+    }
+    
+    .company-def {
+        width: 540px;
+        text-align: center;
+        margin: 16px auto;
+        opacity: .5;
+        letter-spacing: var(--body-ls);
+        line-height: var(--body-lh);
+        margin-bottom: 76px;
+        font-size: var(--body);
+    }
+
+    
+}
